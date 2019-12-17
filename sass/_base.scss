@@ -1,0 +1,94 @@
+// COLOR VARIABLES
+// $color-primary: #c69963;
+// $color-primary-dark: #B28451;
+
+// $color-secondary: #101d2c;
+
+// $color-grey-light-1: #f9f7f6;
+// $color-grey-light-2: #aaa;
+
+// $color-grey-dark-1: #54483A;
+// $color-grey-dark-2: #6D5D4B;
+
+// COLORS - My Color - Triad-006
+$header-01: #b3750c;
+$header-02: #ffffff;
+
+$sidebar-01: #09b364;
+$sidebar-02: #14cc77;
+
+$container-bg-01: #8212b3;
+$container-bg-02: #ffffff;
+
+$main-content-01: #ffffff;
+$main-content-02: #ffffff;
+
+$section-01: #ffffff;
+$section-02: #ffffff;
+
+$para-01: #ffffff;
+$para-02: #ffffff;
+
+$title-h1-01: #555555;
+$title-h2-02: #555555;
+
+$title-h3-01: #555555;
+
+$footer-01: #555555;
+$footer-02: #555555;
+
+
+$light-brown: #ffb73b;
+$gold: #ffae21;
+
+$dark-blue: #0056b3;
+$light-blue: #21bcff;
+
+$dark-gray: #5c553c;
+$dark-gray-01:  #5a5132;
+
+$gray: #aaaaaa;
+$light-gray-01: #e7e7e7;
+
+$white: #ffffff;
+$black: #000000;
+
+// FONT VARIABLES
+
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Nunito', sans-serif;
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% > 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $white;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: $container-bg-01;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] 
+    repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+  
+  & > * {
+    font-size: 3rem;
+    padding: 40px;
+  }
+}

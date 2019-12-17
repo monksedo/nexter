@@ -1,0 +1,11 @@
+.story {
+  &__photos {
+    background-color: $sidebar-02;
+    grid-column: full-start / col-end 4;
+  }
+
+  &__content {
+    background-color: $gray;
+    grid-column: col-start 5 / full-end;
+  }
+}
