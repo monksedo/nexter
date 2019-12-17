@@ -12,6 +12,9 @@ Student/Programmer: Chris Thanh Nguyen
 
 ### Note on project color theme
 
+## Deployment Link
+[Click to run](https://monksedo.github.io/nexter/)
+
 ## Code Snippet
 
 ## Screenshot 
