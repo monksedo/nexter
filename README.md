@@ -16,5 +16,7 @@ Student/Programmer: Chris Thanh Nguyen
 [Click to run](https://monksedo.github.io/nexter/)
 
 ## Code Snippet
+### The beauty power of CSS Grid code
+![]()
 
 ## Screenshot 
