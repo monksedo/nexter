@@ -58,7 +58,7 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  color: #8212b3;
+  color: #cfcfcf;
   text-transform: uppercase;
 }
 
@@ -184,7 +184,24 @@ body {
 }
 
 .header__seenon-text {
-  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content 1fr;
+      grid-template-columns: 1fr -webkit-max-content 1fr;
+      grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  color: #cfcfcf;
+}
+
+.header__seenon-text::before, .header__seenon-text::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: currentColor;
 }
 
 .header__seenon-logos {
@@ -198,12 +215,48 @@ body {
 
 .header__seenon-logos img {
   height: 2.5rem;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .realtors {
-  background-color: #09b365;
+  background-color: #c45105;
+  grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-row-gap: 2rem;
+  justify-items: center;
+}
+
+.realtors__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content max-content;
+      grid-template-columns: -webkit-min-content -webkit-max-content;
+      grid-template-columns: min-content max-content;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realtors__img {
+  width: 7rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.realtors__sold {
+  text-transform: uppercase;
+  color: #cfcfcf;
+  margin-top: -3px;
 }
 
 .features {
@@ -586,7 +639,7 @@ body {
 
 .copyright {
   font-size: 1.4rem;
-  color: #a0a0a0;
+  color: #cfcfcf;
   margin-top: 6rem;
   text-align: center;
 }
