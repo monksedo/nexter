@@ -1,7 +1,6 @@
 .story {
   &__photos {
-    background-image: linear-gradient(rgba($bg-07, .2), rgba($bg-07, .2)), url("../img/back.jpg");
-    background-color: $bg-03;
+    background-image: linear-gradient(rgba($bg-03, .3), rgba($bg-03, .3)), url("../img/back.jpg");
     grid-column: full-start / col-end 4;
 
     display: grid;

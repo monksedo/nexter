@@ -36,6 +36,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  font-size: 4.5rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -103,14 +109,97 @@ body {
 }
 
 .sidebar {
-  background-color: #09b365;
+  background-color: #8212b3;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+}
+
+.nav-btn::before, .nav-btn::after {
+  background-color: #ffffff;
+  height: 2px;
+  width: 4.5rem;
+  content: "";
+  display: block;
+}
+
+.nav-btn::before {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+.nav-btn::after {
+  -webkit-transform: translateY(1.3rem);
+          transform: translateY(1.3rem);
 }
 
 .header {
-  background-color: #ffffff;
   grid-column: full-start / col-end 6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 81, 5, 0.5)), to(rgba(196, 81, 5, 0.5))), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba(196, 81, 5, 0.5), rgba(196, 81, 5, 0.5)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr min-content 6rem 1fr;
+      grid-template-rows: 1fr -webkit-min-content 6rem 1fr;
+      grid-template-rows: 1fr min-content 6rem 1fr;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__logo {
+  height: 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.header__btn {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.header__seenon-text {
+  color: #ffffff;
+}
+
+.header__seenon-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  justify-items: center;
+}
+
+.header__seenon-logos img {
+  height: 2.5rem;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .realtors {
@@ -156,9 +245,8 @@ body {
 }
 
 .story__photos {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 179, 25, 0.2)), to(rgba(255, 179, 25, 0.2))), url("../img/back.jpg");
-  background-image: linear-gradient(rgba(255, 179, 25, 0.2), rgba(255, 179, 25, 0.2)), url("../img/back.jpg");
-  background-color: #ff7516;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 81, 5, 0.3)), to(rgba(196, 81, 5, 0.3))), url("../img/back.jpg");
+  background-image: linear-gradient(rgba(196, 81, 5, 0.3), rgba(196, 81, 5, 0.3)), url("../img/back.jpg");
   grid-column: full-start / col-end 4;
   display: -ms-grid;
   display: grid;
@@ -461,7 +549,45 @@ body {
 }
 
 .footer {
-  background-color: #e9e9e9;
+  background-color: #555555;
   grid-column: full-start / full-end;
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link:link, .nav__visited {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  display: block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.nav__link:hover, .nav__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #a0a0a0;
+  margin-top: 6rem;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
