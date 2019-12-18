@@ -62,6 +62,14 @@ body {
   text-transform: uppercase;
 }
 
+.heading-3--light {
+  color: #ffffff;
+}
+
+.heading-3--dark {
+  color: #363636;
+}
+
 .heading-4 {
   font-size: 1.9rem;
 }

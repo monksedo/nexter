@@ -30,6 +30,14 @@
   font-size: 1.6rem;
   color: $text-04;
   text-transform: uppercase;
+
+  &--light {
+    color: $text-02;
+  }
+
+  &--dark {
+    color: $text-01;
+  }
 }
 
 .heading-4 {
