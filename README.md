@@ -10,7 +10,7 @@ Course Designer/Instructor/Developer: Jonas Schmedtmann
 
 Student/Programmer: Chris Thanh Nguyen
 
-### Note on project color theme
+### Note on color theme
 I have changed the color theme to practice some color design concepts, to see the original color scheme for this course, please visit [udemy.com](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859774#overview) for more information.
 
 ### What I can do after this training?
