@@ -11,12 +11,25 @@ Course Designer/Instructor/Developer: Jonas Schmedtmann
 Student/Programmer: Chris Thanh Nguyen
 
 ### Note on project color theme
+I have changed the color theme to practice some color design concepts, to see the original color scheme for this course, please visit [udemy.com](https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8859774#overview) for more information.
 
-## Deployment Link
+## View the page
 [Click to run](https://monksedo.github.io/nexter/)
 
 ## Code Snippet
 ### The beauty power of CSS Grid code
-![]()
+![](img/nextercode01.png)
+### Sample on feature page Grid layout
+![](img/nextercode02.png)
 
 ## Screenshot 
+### Home page
+![](img/nexter01.png)
+### Feature page
+![](img/nexter02.png)
+### Home Listing Page
+![](img/nexter03.png)
+### Image gallery page
+![](img/nexter04.png)
+
+
