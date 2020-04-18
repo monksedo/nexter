@@ -17,7 +17,7 @@ I have changed the color theme to practice some color design concepts, to see th
 After completed the training course, I am able to understand all the concepts and now able to design and code very high quality and most beautifull web/app frontend and I am confident to produce many challenging realworld frontend project for business organizations or personal website. 
 
 ## View the page
-[Click to run](https://monksedo.github.io/nexter/)
+[Click to run](https://cnwebdev.github.io/nexter/)
 
 ## Code Snippet
 ### The beauty power of CSS Grid code
